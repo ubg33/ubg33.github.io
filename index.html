@@ -755,6 +755,29 @@ if (query === "granny") {
 </script>
 
 
+<script>
+    const links = [
+"https://ubg33.github.io/game/8%20Ball%20Pool/",
+"https://ubg33.github.io/game/Funny%20Shooter%202/file/",
+"https://ubg33.github.io/game/Liquid%20Swarm/game/",
+"https://ubg33.github.io/game/Slope/",
+"https://ubg33.github.io/game/Tunnel%20Rush",
+"https://ubg33.github.io/game/Wave%20Flip/game"
+    ];
+
+    function openRandom() {
+      const randomLink = links[Math.floor(Math.random() * links.length)];
+      const newTab = window.open("about:blank", "_blank");
+      newTab.document.write(`
+        <html>
+          <head><title>Google Docs</title></head>
+          <body style="margin:0;overflow:hidden;">
+            <iframe src="${randomLink}" frameborder="0" style="width:100vw;height:100vh;border:none;"></iframe>
+          </body>
+        </html>
+      `);
+    }
+  </script>
   <script>
 document.querySelectorAll(".rainbow-text, .rainbow-text-creator").forEach(text => {
 
@@ -875,5 +898,7 @@ rainbowElements.forEach(text => {
     }
 }
 </style>
+</body>
+</html>   
 </body>
 </html>   
